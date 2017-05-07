@@ -89,6 +89,8 @@ typedef NS_ENUM(NSInteger, GCDAsyncSocketError) {
 - (instancetype)initWithDelegate:(nullable id<GCDAsyncSocketDelegate>)aDelegate delegateQueue:(nullable dispatch_queue_t)dq;
 - (instancetype)initWithDelegate:(nullable id<GCDAsyncSocketDelegate>)aDelegate delegateQueue:(nullable dispatch_queue_t)dq socketQueue:(nullable dispatch_queue_t)sq;
 
+- (void)enableTracking;
+
 #pragma mark Configuration
 
 @property (atomic, weak, readwrite, nullable) id<GCDAsyncSocketDelegate> delegate;
