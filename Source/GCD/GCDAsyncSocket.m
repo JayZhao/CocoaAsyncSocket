@@ -7235,7 +7235,6 @@ static OSStatus SSLWriteFunction(SSLConnectionRef connection, const void *data, 
 		}
 		
 		int aStateIndex = stateIndex;
-		dispatch_queue_t theSocketQueue = socketQueue;
 		
 		__weak GCDAsyncSocket *weakSelf = self;
 		
